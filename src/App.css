@@ -1,38 +1,62 @@
-.App {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.bob {
+  
+  width: 40px;
+  height: 409px;
+  transform:rotate(0deg);
+  font-size: x-large;
+  background-color: rgb(42, 165, 85)
+  
+  
+}
+.foop {
+
+  width: 40px;
+  height: 409px;
+  transform: rotate(0deg);
+  font-size: x-large;
+  background-color: rgb(42, 165, 85)
+}
+img {
+border: 4px solid black;
+display: block;
+
+  width: 400px;
+  height: 400px;
+ 
+
+}
+h1{
+color: rgb(42, 165, 85);
+text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+border:4px solid black;
+background-image: none;
+background-color: azure;
+width: 300px;
+
+
+
+
+
+}
+h2 {
   text-align: center;
+  color: rgb(233, 8, 139);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
