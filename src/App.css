@@ -62,9 +62,10 @@ width: 300px;
 }
 h2 {
   text-align: center;
-  color: rgb(233, 8, 139);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(225, 112, 169);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: italic;
+  font-size: 30px;
   
 }
 
