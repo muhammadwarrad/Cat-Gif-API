@@ -3,10 +3,9 @@ import { useEffect, useState } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"
   
 
-  
 
 function App() {
-  
+
   const [gifs, setGifs] = useState([]);
   const [index, setIndex] = useState(0)
 
@@ -15,13 +14,13 @@ function App() {
   }, []);
 
   const getGif = () => {
-    fetch(
+     fetch(
       "https://thingproxy.freeboard.io/fetch/http://api.giphy.com/v1/gifs/search?q=cat&api_key=tuOPOQklxsdCJTh6gEiuj5ZaPKWJ8CQW",
       {
         headers: {
           Accept: "application/json",
-        },
-      }
+        } 
+      } 
     )
       .then((res) => res.json())
       .then((data) => {
@@ -29,12 +28,6 @@ function App() {
         setGifs(data.data);
       });
   };
-// function limit (){
-// if (index === 0) 
-// return (
-// (index + 5)
-// )
-// };
   function handleClick(){
     setIndex(prev => {
       if(prev < 49) {
@@ -67,13 +60,13 @@ function App() {
         <>
        <h1>CAT Gifs!!!!</h1>
         <h2>{gifs[index].title}</h2>
-        <h3> NO DATA= Refresh Data</h3>
+       
        
           <div className="container">
          
           <button className="bob" onClick={back}><AiOutlineArrowLeft/></button>
-          <img src={gifs[index].images.original.url} alt="bruh"/>
-          <button className= "foop" onClick={handleClick}><AiOutlineArrowRight/></button>
+          <img className="animation" src={gifs[index].images.original.url} alt="bruh"/>
+          <button className= "foop" onClick={handleClick}   ><AiOutlineArrowRight/></button>
           </div>
 
         </>
@@ -81,4 +74,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
