@@ -75,3 +75,15 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 400px) {
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  .foop {
+    height: 300px;
+  }
+  .bob{
+    height: 300px;
+  }
+}
