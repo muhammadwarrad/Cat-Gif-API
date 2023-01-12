@@ -15,7 +15,7 @@ function App() {
 
   const getGif = () => {
      fetch(
-      "http://api.giphy.com/v1/gifs/search?q=cat&api_key=tuOPOQklxsdCJTh6gEiuj5ZaPKWJ8CQW",
+      "https://api.giphy.com/v1/gifs/search?q=cat&api_key=tuOPOQklxsdCJTh6gEiuj5ZaPKWJ8CQW",
      
     )
       .then((res) => res.json())
