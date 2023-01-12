@@ -15,12 +15,8 @@ function App() {
 
   const getGif = () => {
      fetch(
-      "https://thingproxy.freeboard.io/fetch/http://api.giphy.com/v1/gifs/search?q=cat&api_key=tuOPOQklxsdCJTh6gEiuj5ZaPKWJ8CQW",
-      {
-        headers: {
-          Accept: "application/json",
-        } 
-      } 
+      "http://api.giphy.com/v1/gifs/search?q=cat&api_key=tuOPOQklxsdCJTh6gEiuj5ZaPKWJ8CQW",
+     
     )
       .then((res) => res.json())
       .then((data) => {
