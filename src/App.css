@@ -81,7 +81,28 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 400px) {
+
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  .foop {
+    height: 300px;
+  }
+  .bob{
+    height: 300px;
+  }
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
   img {
     width: 300px;
     height: 300px;
@@ -93,3 +114,15 @@ h2 {
     height: 300px;
   }
 }
+/* @media (max-width: 414px) {
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  .foop {
+    height: 300px;
+  }
+  .bob{
+    height: 300px;
+  }
+} */
