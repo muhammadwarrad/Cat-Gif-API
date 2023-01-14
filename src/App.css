@@ -88,7 +88,7 @@ h2 {
 @media (min-width: 481px) and (max-width: 767px) {
   
   img {
-    width: 300px;
+    width: 481px;
     height: 300px;
   }
   .foop {
@@ -104,7 +104,7 @@ h2 {
 @media (min-width: 320px) and (max-width: 480px) {
   
   img {
-    width: 300px;
+    width: 320px;
     height: 300px;
   }
   .foop {
